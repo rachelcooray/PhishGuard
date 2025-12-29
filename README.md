@@ -49,24 +49,3 @@ pip install -r requirements.txt
 
 # Seed Database & Train Model
 python3 ml/train.py
-```
-Run the server:
-```bash
-python3 app.py
-# Running on http://127.0.0.1:5000
-```
-
-### 2. Frontend Setup
-```bash
-cd frontend
-flutter pub get
-flutter run -d chrome  # Recommended for rapid testing
-```
-
-### 3. Deployment (Docker)
-Build and run the backend container:
-```bash
-cd backend
-docker build -t phishguard-backend .
-docker run -p 5000:5000 phishguard-backend
-```
